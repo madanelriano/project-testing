@@ -1,15 +1,15 @@
 "use client";
 import { useState, ChangeEvent } from "react";
-import { useVideoStore } from "@/store/videoStore";
-import { api } from "@/lib/api";
-import { Button } from "@/components/ui/button";
+import { useVideoStore } from "../../store/videoStore";
+import { api } from "../../lib/api";
+import { Button } from "../../components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
-import { Slider } from "@/components/ui/slider";
+} from "../../components/ui/dropdown-menu";
+import { Slider } from "../../components/ui/slider";
 
 export default function Editor() {
   const [videoUrl, setVideoUrl] = useState("");
